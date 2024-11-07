@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditto Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="name"></h1>
+        <div id="pokemon-info">           
+            <img id="pokemon-sprite" src="" alt="Pokémon Sprite">
+            <p>Height: <span id="height"></span> m</p>
+            <p>Weight: <span id="weight"></span> kg</p>
+            <p>Base Experience: <span id="base-experience"></span></p>
+            <p>Abilities: <span id="abilities"></span></p>
+            
+            <div id="moves-container"></div> <!-- Container for move buttons -->
+            
+            <audio id="cry" controls></audio>
+        </div>
+        <button id="random-pokemon-button">Get Random Pokémon</button>
+        <button id="battle-button" onclick="location.href='battle.html'">Start Battle</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

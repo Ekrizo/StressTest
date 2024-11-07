@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Battle</title>
+</head>
+<body>
+    <div>
+        <h2>Pokémon 1</h2>
+        <img id="pokemon1-sprite" src="" alt="Pokémon 1 Sprite">
+        <p id="pokemon1-name"></p>
+        <p id="pokemon1-hp"></p>
+        <div id="pokemon1-moves"></div>
+        <p id="pokemon1-selected-move"></p>
+    </div>
+    <div>
+        <h2>Pokémon 2</h2>
+        <img id="pokemon2-sprite" src="" alt="Pokémon 2 Sprite">
+        <p id="pokemon2-name"></p>
+        <p id="pokemon2-hp"></p>
+        <div id="pokemon2-moves"></div>
+        <p id="pokemon2-selected-move"></p>
+    </div>
+    <button id="generate-button">Generate Pokémon</button>
+    <button id="battle-button" disabled>Start Battle</button>
+    <button id="home-button" >Home</button>
+    <pre id="battle-log"></pre>
+
+    <script src="battle.js"></script> <!-- Link to your JavaScript file -->
+    <script>const homeButton = document.getElementById('home-button');
+
+        homeButton.addEventListener('click', () => {
+            window.location.href = 'index.html'; // Navigate to index.html
+        });</script>
+</body>
+</html>
